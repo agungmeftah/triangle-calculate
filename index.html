@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematika</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+            <h1>Welcome to Katik</h1>
+            <h4>Hai sobat, selamat datang di Katik :]</h4>
+            <h4>Sebuah web apss sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</h4>
+
+    </header>
+    <main>
+        <div class="container">
+            <a href="#luassegitiga" style="text-decoration: none;"><button type="button">Segitiga</button></a>
+            <a href="#" style="text-decoration: none;"><button type="button" name="jajar-genjang">Jajar Genjang</button></a>
+        </div>
+        <div class="header">
+            <div class="nav">
+                <ul>
+                    <li ><h1 id="luassegitiga">Luas Segitiga</h1></li>
+                    <div>
+                        <div class="segitiga">
+                            <img src="segitiga.png" alt="segitiga">
+                            <p>Rumus Luas Segitiga yaitu: </p>
+                            <p style="text-align: center; font-weight: bold;" >L = 1/2 x a x t</p>
+                            <p>Dimana:</p>
+                            <p>L = luas</p>
+                            <p>a = Panjang Alas</p>
+                            <p>t = Tinggi</p>
+                        </div>
+                        <div class="luas-segitiga">
+                            <h1>Hitung Luas Segitiga</h1>
+                            <form id="luas">
+                                <input type="number" name="alas" placeholder="Nilai Atas" id="alas">
+                                <input type="number" name="tinggi" placeholder="Nilai Tinggi" id="tinggi">
+                                <ul id="hasil-segitiga">
+                                    <li>L = 1/2 x a x t</li>
+                                    <li>L = 1/2 x 90 x 90</li>
+                                    <li>L = </li>
+                                </ul>
+                                <button type="submit" id="btn-luas">Hitung</button>
+                                <button class="reset" type="reset" id="reset-segitiga">Reset</button>
+                            </form>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="nav-2">
+                <ul>
+                    <li><h1>Keliling Segitiga</h1></li>
+                    <div>
+                        <div class="segitiga-2">
+                            <img src="segitiga.png" alt="segitiga">
+                            <p>Rumus Keliling Segitiga yaitu: </p>
+                            <p style="text-align: center; font-weight: bold;" >K = S1 + S2 + S3</p>
+                            <p>Dimana:</p>
+                            <p>K = keliling</p>
+                            <p>S1 = Sisi A</p>
+                            <p>S2 = Sisi B</p>
+                            <p>S3 = Sisi C</p>
+                        </div>
+                        <div class="keliling-segitiga">
+                            <h1>Hitung Keliling Segitiga</h1>
+                            <form id="keliling">
+                                    <input type="number" name="s1" placeholder="Sisi A" id="s1">
+                                    <input type="number" name="s2" placeholder="Sisi B" id="s2">
+                                    <input type="number" name="s3" placeholder="Sisi C" id="s3">
+
+                                    <ul style="display:block" id="hasil-keliling">
+                                        <li>K = S1 + S2 + S3</li>
+                                        <li>K = </li>
+                                        <li>K = </li>
+                                    </ul>
+
+                                    <button type="submit">Hitung</button>
+                                    <button class="reset" type="reset" id="reset-keliling">Reset</button>
+                            </form>
+                        </div> 
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
